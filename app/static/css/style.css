@@ -1,0 +1,24 @@
+h1{
+  text-align:center;
+}
+
+table{
+  width:100%;
+}
+
+.complete{
+  float:right;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #8c8a8a
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+}
+.person-info > h4 {
+  padding-right: 5px;
+}

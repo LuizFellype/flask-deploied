@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Todo bar -->
+<form action="/task" method="post">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" name="content" placeholder="Quer saber info de quem ?">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="submit">Futricar</button>
+    </div>
+  </div>
+</form>
+
+<hr>
+
+{% if person %}
+    <div class="person-info">
+        <h4>Nome: </h4>
+        <h5>{{ person['name'] }}</h5>
+    </div>
+{% endif %}
+
+<script type="text/javascript">
+
+</script>
+
+
+{% endblock %}
